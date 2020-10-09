@@ -7,6 +7,7 @@ import 'screens/home_screen.dart';
 void main() async{
   //de 3lshan al app ysht8l
   WidgetsFlutterBinding.ensureInitialized();
+  //store data local
   SharedPreferences prefs = await SharedPreferences.getInstance();
    bool seen=prefs.getBool("seen");
    Widget _screen;
